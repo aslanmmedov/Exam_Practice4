@@ -1,0 +1,62 @@
+.form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+    margin-bottom: 3rem;
+}
+.cardDyn {
+    padding: 0.5rem;
+    border-radius: 7px;
+    transition: 0.6s;
+    &:hover {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .cardImage {
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
+    }
+    .cardTitle {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      p {
+        font-weight: 600;
+        display: flex;
+        gap: 0.3rem;
+        color: #fe4c50;
+        span {
+          color: black;
+          opacity: 0.4;
+          text-decoration: line-through;
+        }
+      }
+    }
+    .cardBtns {
+      button {
+        margin-top: 0.5rem;
+        border: none;
+        background-color: #fe4c50;
+        width: 100%;
+        padding: 0.5rem;
+        color: white;
+        font-weight: 600;
+        transition: 0.6s;
+      }
+    }
+  }
